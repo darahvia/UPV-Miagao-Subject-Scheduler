@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRS Schedule Selector</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+    <div>
+        <header class="header-bg">
+            <img src="header.png" alt="Logo">
+        </header>        
+
+        <img src="arrow.png" alt="Back" onclick="goBack()" class="back-arrow">
+
+        <main>
+            <div class="select-subjects">
+                <label for="subjectDropdown">Select Subjects</label>
+                <select id="subjectDropdown" onchange="displaySchedule()">
+                    <option value=""> Select a Subject </option>
+                    <option value="CMSC 10">CMSC 10 - Introduction to Computing</option>
+                    <option value="CMSC 11">CMSC 11 - Introduction to Computer Science</option>
+                    <option value="CMSC 123">CMSC 123 - Data Structures</option>
+                    <option value="CMSC 124">CMSC 124 - Design and Implementation of Programming Languages</option>
+                    <option value="CMSC 128">CMSC 128 - Software Engineering 1</option>
+                    <option value="CMSC 129">CMSC 129 - Software Engineering 2</option>
+                    <option value="CMSC 131">CMSC 131 - Introduction to Computer Organization & Machine Level Programming</option>
+                    <option value="CMSC 134">CMSC 134 - Human-Computer Interaction</option>
+                    <option value="CMSC 137">CMSC 137 - Data Communication and Networking</option>
+                    <option value="CMSC 141">CMSC 141 - Automata & Language Theory</option>
+                    <option value="CMSC 151">CMSC 151 - Systems Analysis & Design</option>
+                    <option value="CMSC 192">CMSC 192 - Ethical and Professional Issues in Computing</option>
+                    <option value="CMSC 197">CMSC 197 - Special Topics (Machine Learning)</option>
+                    <option value="CMSC 198.1">CMSC 198.1 - Special Problem I</option>
+                    <option value="CMSC 22">CMSC 22 - Fundamentals of Object-oriented Programming</option>
+                    <option value="CMSC 56">CMSC 56 - Discrete Mathematical Structures in Computer Science 1</option>
+                </select>
+                <button class="plan" onclick="planSchedule()">Plan Schedule</button>
+            </div>
+            <div class="enlist-subjects">
+                <h2>Enlist Subjects</h2>
+                <div id="scheduleBox"></div>
+                <button class ="add-sub" onclick="addSubject()">Add Subject</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
