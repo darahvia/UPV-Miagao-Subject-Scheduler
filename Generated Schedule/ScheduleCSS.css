@@ -28,6 +28,12 @@ body{
     width: 1%;
 }
 
+#arrow:select{
+    margin-left: 15px;
+    width: 1%;
+
+}
+
 
 #arrow:active{
     transform: translateY(4px);
@@ -112,7 +118,7 @@ body{
 }
 
 .select-clicked {
-    border: 2px #26489a  solid;
+    border: 1px #363a43 solid;
     box-shadow: 1px 1px lightgray;
 }
 
@@ -130,7 +136,7 @@ body{
     transition: 0.3s;
 
 }
-/*
+/* 
 
 rotate style
 
@@ -147,7 +153,7 @@ rotate style
     padding: 0.2em 0.5em;
     background:  rgb(253, 253, 253);
     border: 1px #363a43 solid;
-    box-shadow: 1px 1px lightblue;
+    box-shadow: 1px 1px lightgray;
     border-radius: 10px;
     color: #9fa5b5;
     position: absolute;
@@ -169,12 +175,12 @@ rotate style
 }
 
 .menu li:hover {
-    background: #2a2d35;
+    background: #f1f1f1;
 
 }
 
 .Active{
-    background: #23242a;
+    background: #5b5f6d;
 }
 
 /*
@@ -186,7 +192,7 @@ open styles
 .menu-open{
     display: block;
     opacity: 1;
-}
+} 
 
 
 /* MAIN AREA ( TABLE */
@@ -206,7 +212,7 @@ open styles
     box-sizing: border-box;
 }
 
-table, th, td {
+table, td {
     padding: 1rem;
 
 }
@@ -222,7 +228,24 @@ td {
 
 }
 
+.table_header {
+    width: 97%;
+    height: 10%;
+    background-color: #F0F1F4;
+    padding: .8rem 1rem;
 
+    position: sticky;
+    top: 0;
+    box-shadow: 2px 2px lightgray;
+    /* Border Radius at the top */
+
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 5px 5px 0px 0px;
+    border-radius: 5px 5px 0px 0px; 
+
+    overflow:hidden;
+
+}
 
 .table_body {
 
@@ -251,11 +274,12 @@ td {
 
 
 main.table {
-    width: 65vw;
+    width: 70vw;
     height: 70vh;
     background-color: #fff5;
     box-shadow: 0 2px 2px 2px lightgray;
     border-radius: 10px;
+    margin-left: -px;
 
 
     margin-top: -50px;
@@ -263,41 +287,20 @@ main.table {
     
 }
 
-.table_header thead {
-    background-color:  #F0F1F4;
-    display: table-header-group;
-}
-
-.table_header th {
+.table_header thead th {
+    background-color: #F0F1F4;
+    display:flexbox;
     font-size: 15.5px;
-
+    padding: 1rem;
 }
+
 
 
 #expand:active{
     transform: translateY(4px);
 }
 
-.table_header {
-    width: 96.7%;
-    height: 10%;
-    background-color: #F0F1F4;
-    padding: .8rem 1rem;
 
-    position: sticky;
-    top: 0;
-    text-align: left;
-    box-shadow: 2px 2px lightgray;
-
-    /* Border Radius at the top */
-
-    -moz-border-radius: 0px;
-    -webkit-border-radius: 5px 5px 0px 0px;
-    border-radius: 5px 5px 0px 0px; 
-
-    overflow:hidden;
-
-}
 
 .table_body::-webkit-scrollbar-track {
     border-radius: 8px;
